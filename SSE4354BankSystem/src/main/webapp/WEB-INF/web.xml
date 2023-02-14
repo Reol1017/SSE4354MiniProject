@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>SSE4354BankSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+	<servlet-name>GenerateOTP</servlet-name>
+	<servlet-class>com.servlet.GenerateOTPServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>VertifyOTP</servlet-name>
+	<servlet-class>com.servlet.VertifyOTPServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>CheckBalance</servlet-name>
+	<servlet-class>com.servlet.CheckBalanceServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>SendEmail</servlet-name>
+	<servlet-class>com.servlet.SendEmailServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>CheckBalance</servlet-name>
+	<url-pattern>/CheckBalance</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+
